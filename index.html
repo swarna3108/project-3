@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>NETFLIX</h1>
+    <div class="top-bar">
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Español</option>
+        <!-- Add more languages as needed -->
+      </select>
+      <a href="https://www.netflix.com/login">
+
+      <button id="signInBtn">Sign In</a></button>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search for movies or TV shows..." />
+  </header>
+
+  <!-- New Section: Netflix Info and Email for Membership -->
+  <section class="netflix-info">
+    <h2>Unlimited movies, TV shows and more</h2>
+    <p>Starts at ₹149. Cancel at any time.</p>
+    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+    <input type="email" id="userEmail" placeholder="Enter your email" />
+    <button onclick="submitEmail()">Submit</button>
+  </section>
+
+  <!-- Dynamic Content Grid (Movies and TV Shows) -->
+  <div class="content-grid-container">
+    <h2 class="trending-title">Trending Now</h2>
+    <div class="content-grid" id="contentGrid"></div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is Netflix?</button>
+      <div class="faq-answer">
+        <p>Netflix is an OTT platform that allows you to stream movies and TV shows.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How much does Netflix cost?</button>
+      <div class="faq-answer">
+        <p>Netflix offers various pricing plans starting from $9.99/month.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Where can I watch?</button>
+      <div class="faq-answer">
+        <p>You can watch Netflix on a variety of devices, including your TV, laptop, or mobile phone.</p>
+      </div>
+    </div>
+  </section>
+  <section class="user-profile">
+    <h2>Enter Your Email to Create/Restart Your Membership</h2>
+    <input type="email" id="userEmail" placeholder="Enter your email" />
+    <button onclick="submitEmail()">Submit</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a></p>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Help Centre</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Media Centre</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Ways to Watch</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+        <li><a href="#">Corporate Information</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Speed Test</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Only on Netflix</a></li>
+      </ul>
+      <div>
+       
+        <p>Netflix India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
